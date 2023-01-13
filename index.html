@@ -19,7 +19,7 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/nav.css">
-<!--  <link rel="stylesheet" type="text/css" href="css/style.css">-->
+  <!--  <link rel="stylesheet" type="text/css" href="css/style.css">-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <meta name="theme-color" content="#fafafa">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,132 +32,153 @@
 
 <!-- Navbar Section -->
 
-<!--<section id="navigation">-->
-<!--<nav class="navbar navbar-expand-lg bg-light fixed-top">-->
-<!--  <div class="container-fluid">-->
-<!--    <a href="#" class="navbar-brand">-->
-<!--      &lt;!&ndash; Logo Image &ndash;&gt;-->
-<!--      <img src="img/logo.png" width="50" height="50" alt="" class="d-inline-block align-middle mr-2">-->
-<!--      &lt;!&ndash; Logo Text &ndash;&gt;-->
-<!--      <span class="text-uppercase font-weight-bold">KABIR PROPERTY MANAGEMENT</span>-->
-<!--    </a>-->
-<!--    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">-->
-<!--      <span class="navbar-toggler-icon"></span>-->
-<!--    </button>-->
-<!--    <div class="collapse navbar-collapse" id="navbarSupportedContent">-->
-<!--      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">-->
-<!--        <li class="nav-item">-->
-<!--          <a class="nav-link" aria-current="page" href="#">Home</a>-->
-<!--        </li>-->
-<!--        <li class="nav-item">-->
-<!--          <a class="nav-link" href="#about">About</a>-->
-<!--        </li>-->
-<!--        <li class="nav-item">-->
-<!--          <a class="nav-link" href="#services">Services</a>-->
-<!--        </li>-->
-<!--        <li class="nav-item">-->
-<!--          <a class="nav-link" href="#properties">Properties</a>-->
-<!--        </li>-->
-<!--        <li class="nav-item">-->
-<!--          <a class="nav-link" href="#contact">Contact</a>-->
-<!--        </li>-->
-<!--          <a class="nav-link" href="../KPM/php/pages/home.php"><i class="fa-solid fa-right-to-bracket"></i> Login</a>-->
-<!--        </li>-->
-<!--      </ul>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</nav>-->
-<!--</section>-->
-<ul class="menu">
-  <div class="toggle"><ion-icon name="add-outline"></ion-icon></div>
-  <li style="--i:0;--clr:#ff2972;"><a href="#"><ion-icon name="home-outline"></ion-icon></a></li>
-  <li style="--i:1;--clr:#ff2972;"><a href="#"><ion-icon name="home-outline"></ion-icon></a></li>
-  <li style="--i:2;--clr:#ff2972;"><a href="#"><ion-icon name="home-outline"></ion-icon></a></li>
-  <li style="--i:3;--clr:#ff2972;"><a href="#"><ion-icon name="construct-outline"></ion-icon></a></li>
-  <li style="--i:4;--clr:#ff2972;"><a href="#"><ion-icon name="home-outline"></ion-icon></a></li>
-  <li style="--i:5;--clr:#ff2972;"><a href="#"><ion-icon name="home-outline"></ion-icon></a></li>
-  <li style="--i:6;--clr:#ff2972;"><a href="#"><ion-icon name="home-outline"></ion-icon></a></li>
-  <li style="--i:7;--clr:#ff2972;"><a href="#"><ion-icon name="enter-outline"></ion-icon></a></li>
-</ul>
+<section id="navigation">
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top" id="navList" style="transition: all 0.5s">
+    <div class="container-fluid">
+      <a href="#" class="navbar-brand">
+        <!-- Logo Image -->
+        <img id="imgBlack" src="img/logo.png" width="50" height="50" alt="" class="d-inline-block align-middle mr-2 d-none">
+        <img id="imgPink" src="img/logo2.png" width="50" height="50" alt="" class="d-inline-block align-middle mr-2">
+        <!-- Logo Text -->
+        <span class="text-uppercase font-weight-bold">KABIR PROPERTY MANAGEMENT</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#properties">Properties</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          <a class="nav-link" href="../KPM/php/pages/home.php"><i class="fa-solid fa-right-to-bracket"></i> Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</section>
 
 <!-- Home Section -->
 
 <section id="home">
-<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  <!--<div id="hero-carousel" class="carousel slide" data-bs-ride="false">-->
+  <!--  <div class="carousel-indicators">-->
+  <!--    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>-->
+  <!--    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>-->
+  <!--    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>-->
+  <!--  </div>-->
+  <!--  <div class="carousel-inner text-center">-->
+  <!--    <div class="carousel-item active c-item" style="height: 500px;">-->
+  <!--      <img src="img/slide1.jpeg" class="d-block w-100 hero-image c-img" alt="...">-->
+  <!--      <div class="carousel-caption d-flex h-100 align-items-center justify-content-center">-->
+  <!--        <h5 style="font-size: 65px;">KABIR PROPERTY MANAGEMENT</h5>-->
+  <!--      </div>-->
+  <!--      <div class="carousel-caption">-->
+  <!--        <h3>“Let us Manage your Property!!” - KPM</h3>-->
+  <!--        <p><a href="#about" class="btn btn-warning mt-3">Learn More</a></p>-->
+  <!--      </div>-->
+  <!--    </div>-->
+  <!--    <div class="carousel-item c-item" style="height: 500px;">-->
+  <!--      <img src="img/slide2.jpg" class="d-block w-100 hero-image c-img" alt="...">-->
+  <!--      <div class="mask" style="background-color: rgba(0,0,0,0.5)">-->
+  <!--      <div class="carousel-caption">-->
+  <!--        <h5>YOUR NEXT PROPERTY MANAGER</h5>-->
+  <!--        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium dolor doloribus eveniet hic quos!</p>-->
+  <!--        <p><a href="#" class="btn btn-warning mt-3">Learn More</a></p>-->
+  <!--      </div>-->
+  <!--      </div>-->
+  <!--    </div>-->
+  <!--    <div class="carousel-item c-item" style="height: 500px;">-->
+  <!--      <img src="img/slide3.jpg" class="d-block w-100 hero-image c-img" style="border-color: #f0f9ff;" alt="...">-->
+  <!--      <div class="carousel-caption">-->
+  <!--        <h5>FOR YOUR NEXT DREAM HOME</h5>-->
+  <!--        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores dignissimos laboriosam, nam quidem sed temporibus.</p>-->
+  <!--        <p><a href="#" class="btn btn-warning mt-3">Learn More</a></p>-->
+  <!--      </div>-->
+  <!--    </div>-->
+  <!--  </div>-->
+  <!--  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">-->
+  <!--    <span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
+  <!--    <span class="visually-hidden">Previous</span>-->
+  <!--  </button>-->
+  <!--  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">-->
+  <!--    <span class="carousel-control-next-icon" aria-hidden="true"></span>-->
+  <!--    <span class="visually-hidden">Next</span>-->
+  <!--  </button>-->
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item c-item active" style="height: 450px;">
+        <img src="img/slide1.jpeg" class="d-block w-100 c-img" style="height:100%; object-fit: cover" alt="...">
+        <div class="mask" style="background-color: rgba(0,0,0,0.5)">
+          <div class="carousel-caption">
+            <h5>KABIR PROPERTY MANAGEMENT</h5>
+            <h3 class="py-5">"Let Us Manage Your Property" - KPM</h3>
+            <p><a href="#" class="btn btn-warning mt-3">Learn More</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item c-item" style="height: 450px;">
+        <img src="img/slide2.jpg" class="d-block w-100 c-img" style="height:100%; object-fit: cover" alt="...">
+        <div class="mask" style="background-color: rgba(0,0,0,0.5)">
+          <div class="carousel-caption">
+            <h5>YOUR NEXT PROPERTY MANAGER</h5>
+            <h3 class="py-5">"Get The Most Out Of Your Rental Property" - KPM</h3>
+            <p><a href="#" class="btn btn-warning mt-3">Learn More</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item c-item" style="height: 450px;">
+        <img src="img/slide3.jpg" class="d-block w-100 c-img" style="height:100%; object-fit: cover" alt="...">
+        <div class="mask" style="background-color: rgba(0,0,0,0.5)">
+          <div class="carousel-caption">
+            <h5>FOR YOUR NEXT DREAM HOME</h5>
+            <h3 class="py-5">"Servicing All Of Glassboro" - KPM</h3>
+            <p><a href="#" class="btn btn-warning mt-3">Learn More</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="../KABIRPROPERTYMANAGEMENT/img/slide1.jpeg" class="d-block w-100 hero-image" alt="...">
-      <div class="carousel-caption">
-        <h4 class="py-lg-5">KABIR PROPERTY MANAGEMENT</h4>
-        <h2 class="py-lg-5"> Let us Manage your Property! </h2>
-        <p class="pb-lg-10"><a href="#about" class="btn btn-warning mt-3">Learn More</a></p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="../KABIRPROPERTYMANAGEMENT/img/slide2.jpg" class="d-block w-100 hero-image" alt="...">
-      <div class="mask" style="background-color: rgba(0,0,0,0.5)">
-      <div class="carousel-caption">
-        <h5>YOUR NEXT PROPERTY MANAGER</h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium dolor doloribus eveniet hic quos!</p>
-        <p><a href="#" class="btn btn-warning mt-3">Learn More</a></p>
-      </div>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="../KABIRPROPERTYMANAGEMENT/img/slide3.jpg" class="d-block w-100 hero-image" style="border-color: #f0f9ff;" alt="...">
-      <div class="carousel-caption">
-        <h5>FOR YOUR NEXT DREAM HOME</h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores dignissimos laboriosam, nam quidem sed temporibus.</p>
-        <p><a href="#" class="btn btn-warning mt-3">Learn More</a></p>
-      </div>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
+  <!--</div>-->
 </section>
 
 <!-- About Section -->
 
-<section id="about" class="about section-padding" style="background-color:#282d32;">
+<section id="about" class="about section-padding" style="background: #282d32;">
   <div class="container">
-    <div class="row">
-      <div class="col-lg-4 col-md-12 col-12 py-3">
+    <div class="row py-5">
+      <div class="col-lg-4 col-md-12 col-12">
         <img src="img/logo2.png" alt="" class="img-fluid bg-light" style="width: 400px; height: 400px;">
       </div>
       <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
-        <div class="about-text text-white">
+        <div class="about-text text-light">
           <h2> Learn About Our Company </h2>
           <p>Founded and built by your very own Rowan Students Kabir Bhagat and Douglas McClure. KPM all began as an idea after tirelessly searching for housing during my final year at Rowan University. Seeing my very own struggles, and being an engineer, I was well acquainted with solving problems.</p>
           <a href="#" class="btn btn-warning">Learn More</a>
         </div>
       </div>
+    </div>
+    <div class="row py-5">
       <div class="col-lg-4 col-md-12 col-12">
-        <div class="about-img">
-          <img src="img/team-photo.jpg" alt="" class="img-fluid" style="width: 400px; height: 250px;">
-        </div>
+        <img src="img/sigrhophoto.PNG" alt="" class="img-fluid bg-light" style="width: 400px; height: 300px;">
       </div>
       <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
-        <div class="about-text text-white">
+        <div class="about-text text-light">
           <h2> Meet Our Team </h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Ab debitis delectus hic magnam veniam. Provident!
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Commodi, eveniet laudantium praesentium quod sit veniam.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Earum, fuga obcaecati officiis pariatur quibusdam voluptate.</p>
-          <a href="#" class="btn btn-warning">Learn More</a>
+          <p>Our team consists of nothing but the top most dedicated candidates who are happy to assist with any of our services we provide. They are what makes the process of Kabir Property Management so Simple, Secure, and Speedy.</p>
+          <a href="pages/team.html" class="btn btn-warning">Learn More</a>
         </div>
       </div>
     </div>
@@ -170,20 +191,19 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <div class="section-header text-center pb-5">
-          <h2>Our Services</h2>
+        <div class="section-header text-center text-dark pb-5 text-light">
+          <h2>Our Rental Services</h2>
           <p>Lorem ipsum dolor sit amet, <br> consectetur adipisicing elit. Dignissimos, obcaecati.</p>
         </div>
       </div>
     </div>
-
     <div class="row row-cols-1 row-cols-md-3 g-4">
       <div class="col-12 col-md-12 col-lg-4">
         <div class="card text-white text-center bg-dark pb-2">
           <div class="card-body">
             <i class="fa-solid fa-screwdriver-wrench py-2"></i>
             <h3 class="card-title">Maintenance & Repairs</h3>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta exercitationem iusto quo rem! Corporis cupiditate eaque est, exercitationem fugiat id labore magni numquam obcaecati perspiciatis quae sit tempore, voluptas voluptatum.</p>
+            <p class="lead">Maintenance and Repairs can be scheduled through our website's WORKORDER TAB by Tenants that are registered. Owners can access work orders through the website's WORKORDER TAB as well to see the status of the Work Order.</p>
             <button class="btn btn-warning text-dark">Learn More</button>
           </div>
         </div>
@@ -193,7 +213,7 @@
           <div class="card-body">
             <i class="fa-solid fa-house-circle-check py-2"></i>
             <h3 class="card-title">Inspections & Check Ups</h3>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta exercitationem iusto quo rem! Corporis cupiditate eaque est, exercitationem fugiat id labore magni numquam obcaecati perspiciatis quae sit tempore, voluptas voluptatum.</p>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta exercitationem iusto quo rem! Corporis cupiditate eaque est, exercitationem fugiat id labore magni numquam obcaecati perspiciatis</p>
             <button class="btn btn-warning text-dark">Learn More</button>
           </div>
         </div>
@@ -202,10 +222,18 @@
         <div class="card text-white text-center bg-dark pb-2">
           <div class="card-body">
             <i class="fa-solid fa-folder-open py-2"></i>
-            <h3 class="card-title">Financial Records & Bookkeeping</h3>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta exercitationem iusto quo rem! Corporis cupiditate eaque est, exercitationem fugiat id labore magni numquam obcaecati perspiciatis quae sit tempore, voluptas voluptatum.</p>
+            <h3 class="card-title">Financial Records</h3>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta exercitationem iusto quo rem! Corporis cupiditate eaque est, exercitationem fugiat id labore magni numquam obcaecati perspiciatis</p>
             <button class="btn btn-warning text-dark">Learn More</button>
           </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="section-header text-center pb-5 pt-lg-5">
+          <h2>Our Management Services</h2>
+          <p>Lorem ipsum dolor sit amet, <br> consectetur adipisicing elit. Dignissimos, obcaecati.</p>
         </div>
       </div>
     </div>
@@ -299,7 +327,7 @@
       </div>
       <div class="col">
         <div class="card">
-          <img src="img/house1.jpg" class="card-img-top" alt="...">
+          <img src="img/card1.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title"> $2,600 </h5>
             <hr class="d-flex">
@@ -324,7 +352,7 @@
         </div>
       </div>
       <div class="col">
-        <div class="card box">
+        <div class="card">
           <img src="img/card1.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title"> $2,600 </h5>
@@ -340,50 +368,53 @@
   </div>
 </section>
 
-<!-- Benefits -->
-<section id="benefits" class="benefits section-padding">
-  <div class="container">
-
-  </div>
-</section>
-
 <!-- Contact Section -->
 
 <section id="contact" class="contact section-padding">
-<div class="container">
-  <div class="row">
-    <div class="col-md-12">
-      <div class="section-header text-center pb-5">
-        <h2>Contact Us</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, quo?</p>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="section-header text-center pb-5">
+          <h2>Contact Us</h2>
+          <p>Contact Us With Any Questions You May Have Relating To Our Services And We'll Get Back To You As Soon As Possible?</p>
+        </div>
+      </div>
+    </div>
+    <div class="row m-0">
+      <div class="col-md-12 p-0 pt-4 pb-4">
+        <form action="#" class="bg-white p-4.m-auto">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="mb-3">
+                <input type="text" class="form-control" required placeholder="Full Name">
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="mb-3">
+                <input type="text" class="form-control" required placeholder="Email">
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="mb-3">
+                <input type="text" class="form-control" required placeholder="Phone Number">
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="mb-3">
+                <input type="text" class="form-control" required placeholder="Property of Interest">
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="mb-3">
+                <textarea row="3" required class="form-control" placeholder="Message"></textarea>
+              </div>
+            </div>
+            <button class="btn btn-warning btn-lg btn-block mt-3">Send Now</button>
+          </div>
+        </form>
       </div>
     </div>
   </div>
-  <div class="row m-0">
-    <div class="col-md-12 p-0 pt-4 pb-4">
-      <form action="#" class="bg-white p-4.m-auto">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="mb-3">
-              <input type="text" class="form-control" required placeholder="Full Name">
-            </div>
-          </div>
-          <div class="col-md-12">
-            <div class="mb-3">
-              <input type="text" class="form-control" required placeholder="Email">
-            </div>
-          </div>
-          <div class="col-md-12">
-            <div class="mb-3">
-              <textarea row="3" required class="form-control" placeholder="Message"></textarea>
-            </div>
-          </div>
-          <button class="btn btn-warning btn-lg btn-block mt-3">Send Now</button>
-        </div>
-      </form>
-    </div>
-  </div>
-</div>
 </section>
 <!--Footer Section -->
 <div class="footer-dark">
@@ -411,7 +442,8 @@
         </div>
         <div class="col-md-6 item text">
           <h3>Kabir Property Management</h3>
-          <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.</p>
+          <p><a href="tel:(732) 685 - 2080" style="text-decoration: none; color: rgba(255,255,255,0.4);">Phone: (732) 685 - 2080</a><br>
+            <a href="mailto:kabirpropertymanagement@gmail.com" style="text-decoration: none; color: rgba(255,255,255,0.4);">Email: kabirpropertymanagement@gmail.com</a></p>
         </div>
         <div class="col item social"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-tiktok"></i></a></div>
       </div>
@@ -420,14 +452,15 @@
   </footer>
 </div>
 <!-- JavaScript code -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="https://kit.fontawesome.com/39657b55f5.js" crossorigin="anonymous"></script>
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  <script src="js/nav.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+<script src="js/vendor/modernizr-3.11.2.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="https://kit.fontawesome.com/39657b55f5.js" crossorigin="anonymous"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="js/main.js"></script>
+<script src="js/nav.js"></script>
 </body>
 
 </html>

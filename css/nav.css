@@ -16,70 +16,77 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-.menu{
+/*#navbar {*/
+/*  background-color: #333;*/
+/*  position: fixed;*/
+/*  top: -50px;*/
+/*  width: 100%;*/
+/*  display: block;*/
+/*  transition: top 0.3s;*/
+/*}*/
+
+/*#navbar a {*/
+/*  float: left;*/
+/*  display: block;*/
+/*  text-align: center;*/
+/*  padding: 15px;*/
+/*  text-decoration: none;*/
+/*  font-size: 17px;*/
+/*}*/
+
+/*#navbar a:hover {*/
+/*  background-color: #ddd;*/
+/*  color: black;*/
+/*}*/
+.navbar{
   position: fixed;
-  width: 280px;
-  height: 280px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  top: -50px;
+  width: 100%;
+  display: block;
 }
 
-.menu li{
-  position: absolute;
-  left: 0;
-  list-style: none;
-  transition: 0.5s;
-  transition-delay: calc(0.1s * var(--i));
-  transform-origin: 140px;
-  transform: rotate(0deg) translateX(110px);
-  background: none;
+.navbar-nav a{
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 500;
 }
-.menu.active li{
-  transform: rotate(calc(360deg / 8 * var(--i))) translateX(0px);
-  color: var(--clr);
+.navbar-light .navbar-brand{
+  color: #000;
+  font-size:25px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
 }
-.menu li a{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 60px;
-  height: 60px;
-  color: var(--clr);
-  border: 2px solid var(--clr);
-  border-radius: 50%;
-  font-size: 1.5em;
-  transform: rotate(calc(360deg / -8 * var(--i)));
-  transition: 1s;
+.navbar-light .navbar-brand:focus,.navbar-light .navbar-brand:hover{
+  color: #000;
 }
-.menu li a:hover{
-  transition: 0s;
-  background: var(--clr);
-  color: #333333;
-  box-shadow: 0 0 10px var(--clr),
-  0 0 30px var(--clr),
-  0 0 50px var(--clr);
+.navbar-light .navbar-brand .navbar-link{
+  color: #000;
 }
-.menu .toggle{
-  position: relative;
-  margin-right: 32px;
-  width: 60px;
-  height: 60px;
-  background-color:#282d32;
-  border: 2px solid #ffffff;
-  border-radius: 50%;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  z-index: 10000;
-  font-size: 2em;
-  transition: transform 1.25s;
+
+.navbar-scrolled{
+  background-color: white;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
 }
-.menu.active .toggle{
-  transform: rotate(315deg);
+
+.visible{
+  display: block;
 }
+.hidden{
+  display: none;
+}
+
+.w-100{
+  height: 100vh;
+}
+.active{
+  background: goldenrod;
+}
+
+.active a{
+  color: black;
+}
+
 /* Hero Section */
 .section-padding{
   padding: 100px 0;
@@ -108,6 +115,13 @@ body::-webkit-scrollbar {
   right: 0;
   background: #000;
   opacity: 0.7;
+}
+.c-item{
+  height: 500px;
+}
+.c-img{
+  height: 100%;
+  object-fit: cover;
 }
 
 /*About Section*/
@@ -165,6 +179,70 @@ label {
   margin-right: 10px;
 }
 
+/* Team Section */
+.team-section{
+  background: white;
+  text-align: center;
+}
+
+.inner-width{
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px;
+  color: #333333;
+  overflow: hidden;
+}
+.team-section h1{
+  font-size: 20px;
+  text-transform: uppercase;
+  display: inline-block;
+  border-bottom: 4px solid;
+  padding-bottom: 10px;
+}
+.pe {
+  float: left;
+  width: calc(100% / 3);
+  overflow: hidden;
+  padding: 40px 0;
+  transition: 0.4s;
+}
+.pe:hover{
+  background: #ddd;
+}
+.pe img{
+  width: 120px;
+  height: 120px;
+}
+.p-name{
+  margin: 16px 0;
+  text-transform: uppercase;
+}
+.p-des{
+  font-style: italic;
+  color: #3498db;
+}
+.p-sm{
+  margin-top: 12px;
+}
+.p-sm a{
+  margin: 0 4px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  transition: 0.4s;
+}
+.p-sm a:hover{
+  transform: scale(1.3);
+}
+.p-sm a i{
+  color: #333333;
+  line-height: 30px;
+}
+@media screen and (max-width: 600px){
+  .pe{
+    width: 100%;
+  }
+}
 /* Footer Section */
 .footer-dark {
   padding:50px 0;

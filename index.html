@@ -33,14 +33,14 @@
 <!-- Navbar Section -->
 
 <section id="navigation">
-  <nav class="navbar navbar-dark navbar-expand-lg fixed-top" id="navList" style="transition: all 0.5s">
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top" id="navList">
     <div class="container-fluid">
       <a href="#" class="navbar-brand">
         <!-- Logo Image -->
         <img id="imgBlack" src="./img/logo.png" width="50" height="50" alt="" class="d-inline-block align-middle mr-2 d-none">
         <img id="imgPink" src="./img/logo2.png" width="50" height="50" alt="" class="d-inline-block align-middle mr-2">
         <!-- Logo Text -->
-        <span class="text-uppercase font-weight-bold">KABIR PROPERTY MANAGEMENT</span>
+        <span class="text-uppercase font-weight-bold nav-text">KABIR PROPERTY MANAGEMENT</span>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -62,7 +62,7 @@
           <li class="nav-item">
             <a class="nav-link" href="#contact">Contact</a>
           </li>
-          <a class="nav-link" href="./php/pages/home.php"><i class="fa-solid fa-right-to-bracket"></i> Login</a>
+          <a class="nav-link" href="./php/pages/home.php"><i class="fa-solid fa-right-to-bracket"></i>Login</a>
           </li>
         </ul>
       </div>
@@ -72,7 +72,7 @@
 
 <!-- Home Section -->
 
-<section id="home">
+<section id="home" class="home">
   <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item c-item active" style="height: 500px;">
@@ -81,7 +81,7 @@
           <div class="carousel-caption">
             <h5>KABIR PROPERTY MANAGEMENT</h5>
             <h3 class="py-5">"Let Us Manage Your Property" - KPM</h3>
-            <p><a href="#" class="btn btn-warning mt-3">Learn More</a></p>
+            <p><a href="#about" class="btn btn-warning mt-3">Learn More</a></p>
           </div>
         </div>
       </div>
@@ -91,7 +91,7 @@
           <div class="carousel-caption">
             <h5>YOUR NEXT PROPERTY MANAGER</h5>
             <h3 class="py-5">"Get The Most Out Of Your Rental Property" - KPM</h3>
-            <p><a href="#" class="btn btn-warning mt-3">Learn More</a></p>
+            <p><a href="#services" class="btn btn-warning mt-3">Learn More</a></p>
           </div>
         </div>
       </div>
@@ -101,7 +101,7 @@
           <div class="carousel-caption">
             <h5>FOR YOUR NEXT DREAM HOME</h5>
             <h3 class="py-5">"Servicing All Of Glassboro" - KPM</h3>
-            <p><a href="#" class="btn btn-warning mt-3">Learn More</a></p>
+            <p><a href="#properties" class="btn btn-warning mt-3">Learn More</a></p>
           </div>
         </div>
       </div>
@@ -121,8 +121,8 @@
       <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
         <div class="about-text text-light">
           <h2> Learn About Our Company </h2>
-          <p>Founded and built by your very own Rowan Students Kabir Bhagat and Douglas McClure. KPM all began as an idea after tirelessly searching for housing during my final year at Rowan University. Seeing my very own struggles, and being an engineer, I was well acquainted with solving problems.</p>
-          <a href="#" class="btn btn-warning">Learn More</a>
+          <p>Founded and built by your very own Rowan Students Kabir Bhagat and Douglas McClure...</p>
+          <a href="./pages/company.html#about-us" class="btn btn-warning">Learn More</a>
         </div>
       </div>
     </div>
@@ -134,7 +134,7 @@
         <div class="about-text text-light">
           <h2> Meet Our Team </h2>
           <p>Our team consists of nothing but the top most dedicated candidates who are happy to assist with any of our services we provide. They are what makes the process of Kabir Property Management so Simple, Secure, and Speedy.</p>
-          <a href="pages/team.html" class="btn btn-warning">Learn More</a>
+          <a href="pages/company.html#about-team" class="btn btn-warning">Learn More</a>
         </div>
       </div>
     </div>
@@ -160,7 +160,7 @@
             <i class="fa-solid fa-screwdriver-wrench py-2"></i>
             <h3 class="card-title">Maintenance & Repairs</h3>
             <p class="lead">Maintenance and Repairs can be scheduled through our website's WORKORDER TAB by Tenants that are registered. Owners can access work orders through the website's WORKORDER TAB as well to see the status of the Work Order.</p>
-            <button class="btn btn-warning text-dark">Learn More</button>
+            <a href="./pages/services.html"><button class="btn btn-warning text-dark">Learn More</button></a>
           </div>
         </div>
       </div>
@@ -170,7 +170,7 @@
             <i class="fa-solid fa-house-circle-check py-2"></i>
             <h3 class="card-title">Inspections & Check Ups</h3>
             <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta exercitationem iusto quo rem! Corporis cupiditate eaque est, exercitationem fugiat id labore magni numquam obcaecati perspiciatis</p>
-            <button class="btn btn-warning text-dark">Learn More</button>
+            <a href="./pages/services.html"><button class="btn btn-warning text-dark">Learn More</button></a>
           </div>
         </div>
       </div>
@@ -180,7 +180,7 @@
             <i class="fa-solid fa-folder-open py-2"></i>
             <h3 class="card-title">Financial Records</h3>
             <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta exercitationem iusto quo rem! Corporis cupiditate eaque est, exercitationem fugiat id labore magni numquam obcaecati perspiciatis</p>
-            <button class="btn btn-warning text-dark">Learn More</button>
+            <a href="./pages/services.html"><button class="btn btn-warning text-dark">Learn More</button></a>
           </div>
         </div>
       </div>
@@ -200,7 +200,7 @@
             <i class="fa-sharp fa-solid fa-calendar-check py-2"></i>
             <h3 class="card-title">Monthly Rent Collection</h3>
             <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta exercitationem iusto quo rem! Corporis cupiditate eaque est, exercitationem fugiat id labore magni numquam obcaecati perspiciatis quae sit tempore, voluptas voluptatum.</p>
-            <button class="btn btn-warning text-dark">Learn More</button>
+            <a href="./pages/services.html"><button class="btn btn-warning text-dark">Learn More</button></a>
           </div>
         </div>
       </div>
@@ -210,7 +210,7 @@
             <i class="fa-solid fa-hand-holding-dollar py-2"></i>
             <h3 class="card-title">Collecting Security Deposits</h3>
             <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta exercitationem iusto quo rem! Corporis cupiditate eaque est, exercitationem fugiat id labore magni numquam obcaecati perspiciatis quae sit tempore, voluptas voluptatum.</p>
-            <button class="btn btn-warning text-dark">Learn More</button>
+            <a href="./pages/services.html"><button class="btn btn-warning text-dark">Learn More</button></a>
           </div>
         </div>
       </div>
@@ -220,7 +220,7 @@
             <i class="fa-solid fa-money-bill-trend-up py-2"></i>
             <h3 class="card-title">Marketing</h3>
             <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta exercitationem iusto quo rem! Corporis cupiditate eaque est, exercitationem fugiat id labore magni numquam obcaecati perspiciatis quae sit tempore, voluptas voluptatum.</p>
-            <button class="btn btn-warning text-dark">Learn More</button>
+            <a href="./pages/services.html"><button class="btn btn-warning text-dark">Learn More</button></a>
           </div>
         </div>
       </div>
@@ -326,7 +326,7 @@
 
 <!-- Contact Section -->
 
-<section id="contact" class="contact section-padding">
+<section id="contact" class="contact section-padding" style="scroll-snap-align: start;">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -372,6 +372,7 @@
     </div>
   </div>
 </section>
+
 <!--Footer Section -->
 <div class="footer-dark">
   <footer>
@@ -397,7 +398,7 @@
           </ul>
         </div>
         <div class="col-md-6 item text">
-          <h3>Kabir Property Management</h3>
+          <h3 style="color: #f0f9ff">Kabir Property Management</h3>
           <p><a href="tel:(732) 685 - 2080" style="text-decoration: none; color: rgba(255,255,255,0.4);">Phone: (732) 685 - 2080</a><br>
             <a href="mailto:kabirpropertymanagement@gmail.com" style="text-decoration: none; color: rgba(255,255,255,0.4);">Email: kabirpropertymanagement@gmail.com</a></p>
         </div>
@@ -418,5 +419,4 @@
 <script src="./js/main.js"></script>
 <script src="./js/nav.js"></script>
 </body>
-
 </html>

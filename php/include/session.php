@@ -1,26 +1,3 @@
-<?php
-
-session_start();
-require_once 'auth.php';
-$currentUser = new Auth();
-
-if(!isset($_SESSION['user'])){
-  header("Location: ../../../KPM/php/");
-  die;
-}
-
-$currentEmail = $_SESSION['user'];
-
-$data = $currentUser->currentUser($currentEmail);
-
-$cid = $data['id'];
-$cname = $data['name'];
-$cpass = $data['password'];
-$cphone = $data['phone'];
-$cgender = $data['gender'];
-$cdob = $data['dob'];
-$cphoto = $data['photo'];
-$created = $data['created_at'];
-$verified = $data['verified'];
-
-$fname = strtok($cname, " ");
+version https://git-lfs.github.com/spec/v1
+oid sha256:9be18c138325197743dc5d7ba4d90aea4487fa6cda1c81d184c42d7da68f0a6e
+size 687

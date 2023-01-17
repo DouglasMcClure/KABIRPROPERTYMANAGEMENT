@@ -177,6 +177,20 @@ body::-webkit-scrollbar {
   transform:translateX(5px);
   transition: .5s;
 }
+#services .card:hover{
+  background: goldenrod;
+}
+#services .card-body:hover{
+  color: black;
+}
+#services .card{
+  background-color:#282d32;
+}
+#services .btn{
+  background-color:goldenrod;
+  border: 1px;
+  color: black;
+}
 /*Properties Section*/
 .properties .card{
   cursor: pointer;
@@ -344,8 +358,17 @@ label {
   margin-bottom: 40px;
 }
 /*Services Section*/
-.services .card:hover{
+#rental-services .card:hover{
   background: goldenrod;
+}
+#management-services .card{
+  background-color:#282d32
+}
+#management-services .card:hover{
+  background: goldenrod;
+}
+#management-services .card-body:hover{
+  color: black;
 }
 /* Footer Section */
 .footer-dark {

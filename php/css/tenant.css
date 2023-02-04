@@ -40,3 +40,6 @@ a.social{
   width: 50%;
   border: 2px solid #fff;
 }
+td.a:hover{
+  color: white;
+}

@@ -62,7 +62,7 @@ body::-webkit-scrollbar {
 .w-100{
   height: 100vh;
 }
-.active{
+nav .active{
   background: goldenrod;
 }
 

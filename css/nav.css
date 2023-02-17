@@ -153,7 +153,6 @@ body::-webkit-scrollbar {
 }
 
 .about .about-item{
-  cursor: pointer;
   transition: .5s;
 }
 
@@ -163,13 +162,14 @@ body::-webkit-scrollbar {
   transition: .5s;
 }
 /*Services Section*/
-.services .card-body i{
-  font-size: 50px;
+.services i{
+  font-size: 60px;
 }
 
 .services .card{
   cursor: pointer;
   transition: .5s;
+  min-height: 225px;
 }
 
 .services .card:hover{
@@ -202,8 +202,8 @@ body::-webkit-scrollbar {
   color: black;
 }
 
+
 .pricing-table .card{
-  cursor: pointer;
   transition: .5s;
 }
 
@@ -232,13 +232,40 @@ body::-webkit-scrollbar {
   font-size: 30px;
   display: inline-block;
 }
-.plan-options ul{
+.plan-options ul {
   list-style-type: none;
+  padding-left: 0;
 }
-
+.plan-options li{
+  position: relative;
+  padding-left: 1.5em;
+}
+.plan-options ul:first-child li:before {
+  content: "✅";
+  position: absolute;
+  left: 0;
+  width: 1em;
+  height: 1em;
+}
+.marketing ul li:nth-child(3):before{
+  content: "❌";
+}
+.property-management ul li:first-child:before{
+  content: "❌";
+}
+.property-management ul li:nth-child(2):before{
+  content: "❌";
+}
+.pricing-table .btn{
+  transition: .5s;
+}
+.pricing-table .btn:hover{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transform:translateX(5px);
+  transition: .5s;
+}
 /*Properties Section*/
 .properties .card{
-  cursor: pointer;
   transition: .5s;
 }
 .properties .card:hover{
@@ -414,6 +441,11 @@ label {
 #management-services .card-body:hover{
   color: black;
 }
+
+#marketing-services .card:hover{
+  background: goldenrod;
+}
+
 /* Footer Section */
 .footer-dark {
   padding:50px 0;

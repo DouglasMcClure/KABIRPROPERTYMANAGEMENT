@@ -37,7 +37,7 @@
   <section id="navigation">
     <nav class="navbar navbar-expand-lg bg-white fixed-top" id="navList" style="transition: all 0.5s">
       <div class="container-fluid">
-        <a href="../index.html" class="navbar-brand">
+        <a href="../index.php" class="navbar-brand">
           <!-- Logo Image -->
           <img id="imgBlack" src="../img/logo.png" width="50" height="50" alt="" class="d-inline-block align-middle mr-2">
           <!-- Logo Text -->
@@ -69,11 +69,132 @@
     <p class="text">
       Founded and built by your very own Rowan Students Kabir Bhagat and Douglas McClure. KPM all began as an idea after tirelessly searching for housing during my final year at Rowan University. Seeing my very own struggles, and being an engineer, I was well acquainted with solving problems.    </p>
     <div class="mission-statement">
-      <span class="mission-text">Seamless</span>
-      <span class="mission-text">Secure</span>
-      <span class="mission-text">Swift</span>
-      <span class="mission-text">Speedy</span>
-      <span class="mission-text">Sustainable</span>
+      <span class="mission-text" data-bs-toggle="modal" data-bs-target="#seemlessModal">Seamless</span>
+      <span class="mission-text" data-bs-toggle="modal" data-bs-target="#secureModal">Secure</span>
+      <span class="mission-text" data-bs-toggle="modal" data-bs-target="#swiftModal">Swift</span>
+      <span class="mission-text" data-bs-toggle="modal" data-bs-target="#speedyModal">Speedy</span>
+      <span class="mission-text" data-bs-toggle="modal" data-bs-target="#sustainableModal">Sustainable</span>
+      <!-- Mission Statement Modals -->
+      <!-- Seemless Modal -->
+      <div class="modal fade" id="seemlessModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Seemless</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+              Modal body..
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- Secure Modal -->
+      <div class="modal fade" id="secureModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Secure</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+              Modal body..
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- Swift Modal -->
+      <div class="modal fade" id="swiftModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Swift</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+              Modal body..
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- Speedy Modal -->
+      <div class="modal fade" id="speedyModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Speedy</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+              Modal body..
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- Sustainable Modal -->
+      <div class="modal fade" id="sustainableModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Sustainble</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+              Modal body..
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -86,7 +207,7 @@
   <div class="row">
     <!--  Column 1  -->
 
-    <div class="col-md-3 col-sm-6">
+    <div class="col-md-3 col-sm-6" data-bs-toggle="modal" data-bs-target="#kBModal">
       <div class="our-team">
         <div class="pic">
           <img src="../img/kabirbhagat.PNG">
@@ -100,7 +221,7 @@
         </ul>
       </div>
     </div>
-    <div class="col-md-3 col-sm-6">
+    <div class="col-md-3 col-sm-6" data-bs-toggle="modal" data-bs-target="#dMModal">
       <div class="our-team">
         <div class="pic">
           <img src="../img/DouglasMcClure.jpeg">
@@ -128,7 +249,7 @@
         </ul>
       </div>
     </div>
-    <div class="col-md-3 col-sm-6">
+    <div class="col-md-3 col-sm-6" data-bs-toggle="modal" data-bs-target="#maintenanceRepairsModal">
       <div class="our-team">
         <div class="pic">
           <img src="../img/DouglasMcClure.jpeg">
@@ -140,6 +261,59 @@
           <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
           <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
         </ul>
+      </div>
+    </div>
+    <!-- Team Modals -->
+    <!-- Kabir Bhagat Modal -->
+    <div class="modal fade" id="kBModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Kabir Bhagat</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            Modal body..
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="dMModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Douglas McClure</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <!-- Modal body -->
+          <div class="modal-body">
+            <div class="modal-img">
+
+            </div>
+            <div class="modal-txt">
+              <img class="float-start mx-2" src="../img/DouglasMcClure.jpeg" style="height: 250px; width: 200px;">
+            Hello I am Douglas McClure the Developer for KPM & Founder of Resistant Cloud. I am currently a graduate student in Cybersecurity at Rowan University hoping to help grow and expand Kabir Property Management to its fullest potential.
+            </div>
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+          </div>
+
+        </div>
       </div>
     </div>
   </div>

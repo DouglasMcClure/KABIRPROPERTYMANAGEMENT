@@ -1,11 +1,3 @@
-const li=document.querySelectorAll(".nav-item");
-const sec=document.querySelectorAll("section");
-
-function activeMenu(){
-  let len=sec.length;
-  while(--len && window.scrollY - 200< sec[len].offsetTop){}
-  li.forEach(ltx => ltx.classList.remove("active"));
-  li[len].classList.add("active");
-}
-activeMenu();
-window.addEventListener("scroll", activeMenu);
+version https://git-lfs.github.com/spec/v1
+oid sha256:87727a75b9200b334c1050a5aa3d9902ec4d22c4d3f2f856844262554f51b6dc
+size 355

@@ -49,3 +49,11 @@ td.a:hover{
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.section-padding .properties-padding{
+  padding-top: 60px;
+}
+@media (max-width: 1000px) {
+  .properties-padding{
+    padding-top: 70px;
+  }
+}

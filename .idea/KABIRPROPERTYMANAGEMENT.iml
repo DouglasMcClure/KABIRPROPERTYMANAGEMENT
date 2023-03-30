@@ -19,5 +19,7 @@
     <orderEntry type="library" name="jquery.dataTables" level="application" />
     <orderEntry type="library" name="ionicons" level="application" />
     <orderEntry type="library" name="@googlemaps/markerclusterer" level="application" />
+    <orderEntry type="library" name="js-marker-clusterer" level="application" />
+    <orderEntry type="library" name="@googlemaps/markerclusterer" level="application" />
   </component>
 </module>

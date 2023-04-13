@@ -81,18 +81,18 @@ body::-webkit-scrollbar {
   width: 55%;
   float: right;
   background-color: #fdfdfd;
-  padding: 150px;
+  padding: 75px;
 }
 
 .inner-container h1{
   margin-bottom: 30px;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 900;
 }
 
 .text{
-  font-size: 13px;
-  color: #54545454;
+  font-size: 17px;
+  color: #f37c80;
   line-height: 30px;
   text-align: justify;
   margin-bottom: 40px;
@@ -104,7 +104,7 @@ body::-webkit-scrollbar {
   font-size: 13px;
 }
 .mission-text{
-  color: goldenrod;
+  color: #8d94fd;
   cursor: pointer;
   transition: .5s;
   border: 1px solid black;
@@ -148,7 +148,7 @@ body::-webkit-scrollbar {
 h1{
   width: 100%;
   text-align: center;
-  font-size: 3.5em;
+  font-size: 6em;
 }
 .our-team{
   border-radius: 15px;
